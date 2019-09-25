@@ -1,5 +1,5 @@
 # load data
-filename = 'ris2.txt'
+filename = '***.txt'
 file = open(filename, 'rt')
 text = file.read()
 file.close()
@@ -18,4 +18,4 @@ words = [word for word in stripped if word.isalpha()]
 from nltk.corpus import stopwords
 stop_words = set(stopwords.words('english'))
 words = [w for w in words if not w in stop_words]
-print(words[:1000000000000000000000])
+print(words[0:])
