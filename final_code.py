@@ -12,10 +12,10 @@ google_translator = Translator()
 class TwitterClient(object):
     def __init__(self):         #constructor function of class or initializer or handle twitter authentication
        
-        access_token = '1356067753-meH0a1Mkq656me99o3kEzFmXh9Y4BQ20ZFNVXj6'
-        access_token_secret = '22usq1xTu3IV3jqspDjY1wOrpX15yEFETW9n961vUBbff'
-        consumer_key = 'v4g7MB8ws2c9CE5gnz0EXaivG'
-        consumer_secret = 'V5rmJr56ZwNo8OBubnCk0jBo8WkQoSA1IIQnybdgbLHJ55kyZw'
+        access_token = '***************************************************'
+        access_token_secret = '*********************************************'
+        consumer_key = '***********************************'
+        consumer_secret = '******************************************'
  
         try:
             self.auth = OAuthHandler(consumer_key, consumer_secret)
