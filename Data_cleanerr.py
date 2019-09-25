@@ -19,7 +19,7 @@ def tweet_cleaner(text):
     words = tok.tokenize(lower_case)
     return (" ".join(words)).strip()
 
-testing = df.Text[:10000000000000000000000000000000]
+testing = df.Text[0:]
 
 test_result = []
 for t in testing:
