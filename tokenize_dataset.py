@@ -1,5 +1,5 @@
 # load data
-filename = 'twitter_data.txt'
+filename = 'file.txt'
 file = open(filename, 'rt')
 text = file.read()
 file.close()
@@ -10,4 +10,4 @@ tokens = word_tokenize(text)
 from nltk.stem.porter import PorterStemmer
 porter = PorterStemmer()
 stemmed = [porter.stem(word) for word in tokens]
-print(stemmed[:1000000000000000000000])
+print(stemmed[0:])
