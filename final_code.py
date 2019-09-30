@@ -132,7 +132,7 @@ window=Tk() #GUI design
 
 window.wm_title("Sentimetal Analysis for Feedback Sentiments")
 
-l11=Label(window,text="Instructions :     ")
+l11=Label(window,text="Instructions : ")
 l11.grid(row=0,column=0)
 
 l12=Label(window,text="1)Enter Tags")
