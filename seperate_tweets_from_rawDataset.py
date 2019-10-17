@@ -6,5 +6,4 @@ with open('filename.json') as f:
     texts = []
     for data in d:
     	texts.append(data['text'])
-
     print(texts[0:])
