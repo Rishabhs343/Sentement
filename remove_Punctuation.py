@@ -8,4 +8,5 @@ words = text.split()
 import string
 table = str.maketrans('', '', string.punctuation)
 stripped = [w.translate(table) for w in words]
+
 print(stripped[0:])
