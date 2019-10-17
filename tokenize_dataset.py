@@ -10,4 +10,5 @@ tokens = word_tokenize(text)
 from nltk.stem.porter import PorterStemmer
 porter = PorterStemmer()
 stemmed = [porter.stem(word) for word in tokens]
+
 print(stemmed[0:])
