@@ -36,7 +36,6 @@ class TwitterClient(object):
             if res >= 0:
                 return 'negative'
         
-        
         analysis = TextBlob(self.clean_tweet(tweet)) #textblob is natural language processing library uses Naive bayes classifier algorithm
                                                     #tokenize tweets
         if analysis.sentiment.polarity >= 0.05:
