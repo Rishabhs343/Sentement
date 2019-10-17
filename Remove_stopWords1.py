@@ -1,6 +1,6 @@
 # load data
-filename = '***.txt'
-file = open(filename, 'rt')
+filename = 'xyz.txt'
+file = open(filename,'rt')
 text = file.read()
 file.close()
 # split into words
