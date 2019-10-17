@@ -20,7 +20,6 @@ def tweet_cleaner(text):
     return (" ".join(words)).strip()
 
 testing = df.Text[0:]
-
 test_result = []
 for t in testing:
     test_result.append(tweet_cleaner(t))
