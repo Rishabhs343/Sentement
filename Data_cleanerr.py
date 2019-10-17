@@ -14,13 +14,12 @@ def tweet_cleaner(text):
         clean = stripped
     letters_only = re.sub("[^a-zA-Z]", " ", clean)
     lower_case = letters_only.lower()
-    # During the letters_only process two lines above, it has created unnecessay white spaces,
+    # During the letters_only process two lines above, it has created unnecessay white spaces
     # I will tokenize and join together to remove unneccessary white spaces
     words = tok.tokenize(lower_case)
     return (" ".join(words)).strip()
 
 testing = df.Text[0:]
-
 test_result = []
 for t in testing:
     test_result.append(tweet_cleaner(t))

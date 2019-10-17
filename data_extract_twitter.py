@@ -29,5 +29,4 @@ if __name__ == '__main__':
     auth.set_access_token(access_token, access_token_secret)
     stream = Stream(auth, l)
 
-    #This line filter Twitter Streams to capture data by the keywords: 'python', 'javascript', 'ruby'
     stream.filter(track=['RailMinIndia','@RailwaySeva','@mumbairailusers','#indianrailway','RailwaySeva','@RailMinIndia','#RailwaySeva','#RailMinIndia','indianrailway','@indianrailway'])

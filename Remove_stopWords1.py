@@ -18,4 +18,5 @@ words = [word for word in stripped if word.isalpha()]
 from nltk.corpus import stopwords
 stop_words = set(stopwords.words('english'))
 words = [w for w in words if not w in stop_words]
+
 print(words[0:])
